@@ -1394,18 +1394,6 @@ export default function App() {
                 Owner Admin Console
               </button>
             )}
-
-            <button
-              onClick={() => setActiveTab('vscode-export')}
-              className={`px-3.5 py-2 rounded-lg text-sm font-medium transition flex items-center gap-1.5 ${
-                activeTab === 'vscode-export'
-                  ? 'bg-blue-600 text-white'
-                  : 'text-blue-300 hover:bg-blue-500/10'
-              }`}
-            >
-              <FileCode className="w-4 h-4" />
-              VS Code & SQL Files
-            </button>
           </nav>
 
           {/* Right Auth / Profile Controls */}
@@ -3746,7 +3734,7 @@ export default function App() {
         {/* ------------------------------------------------------------------
             7. VS CODE & SUPABASE SQL EXPORT STUDIO
         ------------------------------------------------------------------ */}
-        {activeTab === 'vscode-export' && (
+        {false && activeTab === 'vscode-export' && (
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-6">
             <div className="bg-[#0a1931] text-white rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>

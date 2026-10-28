@@ -1406,17 +1406,7 @@ const [users, setUsers] = useState<Array<Profile & { passwordHash: string }>>(()
               </button>
             )}
 
-            <button
-              onClick={() => setActiveTab('vscode-export')}
-              className={`px-3.5 py-2 rounded-lg text-sm font-medium transition flex items-center gap-1.5 ${
-                activeTab === 'vscode-export'
-                  ? 'bg-blue-600 text-white'
-                  : 'text-blue-300 hover:bg-blue-500/10'
-              }`}
-            >
-              <FileCode className="w-4 h-4" />
-              VS Code & SQL Files
-            </button>
+          
           </nav>
 
           {/* Right Auth / Profile Controls */}
