@@ -3747,8 +3747,8 @@ const [users, setUsers] = useState<Array<Profile & { passwordHash: string }>>(()
         {/* ------------------------------------------------------------------
             7. VS CODE & SUPABASE SQL EXPORT STUDIO
         ------------------------------------------------------------------ */}
-        {activeTab === 'vscode-export' && (
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-6">
+        {false && activeTab === 'vscode-export' && (
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-6">
             <div className="bg-[#0a1931] text-white rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
                 <h1 className="text-2xl font-extrabold">
